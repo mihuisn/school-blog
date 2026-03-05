@@ -4,15 +4,26 @@
     <!--头部-->
     <div class="front-header">
       <div class="front-header-left">
-        <img src="@/assets/imgs/logo.png" alt="">
+        <div class="front-logo-icon">
+          <i class="el-icon-office-building"></i>
+        </div>
         <div class="title">博客论坛平台</div>
       </div>
       <div class="front-header-center">
         <div class="front-header-nav">
           <el-menu :default-active="$route.path" mode="horizontal" router>
-						<el-menu-item index="/front/home">首页</el-menu-item>
-						<el-menu-item index="/front/activity">活动中心</el-menu-item>
-						<el-menu-item index="/front/person">个人中心</el-menu-item>
+            <el-menu-item index="/front/home">
+              <i class="el-icon-s-home"></i>
+              首页
+            </el-menu-item>
+            <el-menu-item index="/front/activity">
+              <i class="el-icon-s-flag"></i>
+              活动中心
+            </el-menu-item>
+            <el-menu-item index="/front/person">
+              <i class="el-icon-user-solid"></i>
+              个人中心
+            </el-menu-item>
           </el-menu>
         </div>
       </div>
